@@ -1,0 +1,26 @@
+[project]
+name = "wasserstein-vae"
+version = "0.1.0"
+description = "VAE with Wasserstein loss in JAX"
+requires-python = ">=3.10"
+dependencies = [
+    "jax[cpu]>=0.4.20",
+    "flax>=0.8.0",
+    "optax>=0.1.7",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "scipy>=1.11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipython>=8.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
