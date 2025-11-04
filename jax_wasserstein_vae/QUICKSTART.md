@@ -7,6 +7,13 @@ cd jax_wasserstein_vae
 uv sync
 ```
 
+**Note**: This project uses Python 3.10-3.12. The `.python-version` file specifies Python 3.11, which uv will automatically use.
+
+If you encounter `No module named pip` errors, try:
+```bash
+rm -rf .venv && uv sync --python 3.11
+```
+
 ## Running the Demo
 
 ### Simple Training Demo (No Plotting)

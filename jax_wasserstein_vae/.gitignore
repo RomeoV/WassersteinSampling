@@ -33,7 +33,7 @@ wheels/
 .ipynb_checkpoints
 
 # pyenv
-.python-version
+# .python-version  # Committed to ensure consistent Python version with uv
 
 # uv
 uv.lock

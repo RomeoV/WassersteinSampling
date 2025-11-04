@@ -29,6 +29,24 @@ cd jax_wasserstein_vae
 uv sync
 ```
 
+**Note**: The project is pinned to Python 3.10-3.12. If you have issues with pip not being found, uv will automatically download and use the correct Python version specified in `.python-version` (3.11).
+
+### Troubleshooting Installation
+
+If you see errors like `No module named pip`, try:
+
+```bash
+# Clean the environment and reinstall
+rm -rf .venv
+uv sync
+```
+
+Or specify Python 3.11 explicitly:
+
+```bash
+uv sync --python 3.11
+```
+
 ## Project Structure
 
 ```
